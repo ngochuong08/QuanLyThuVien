@@ -57,7 +57,6 @@ namespace BTL
             e.TienNo = tienNo;
             e.NgayLapThe = DateTime.Parse(ngayLapthe);
             e.NgayHetHan = DateTime.Parse(ngayHethan);
-            e.isActive = 1;
             QLThuVienDC.DOCGIAs.InsertOnSubmit(e);
             QLThuVienDC.SubmitChanges();
         }

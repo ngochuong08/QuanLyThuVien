@@ -62,7 +62,7 @@ namespace BTL
                                  ).Select(s => s);
             }
             // sach.ToList().ForEach(i => Debug.WriteLine(i.TenSach));
-            return sach;
+            return sach.OrderByDescending(s=>s.MaSach);
         }
         public bool CheckBookExistInChiTietPhieuMuon(int idSach)
         {
@@ -90,7 +90,6 @@ namespace BTL
             e.TriGia = gia;
             e.NamXuatBan = DateTime.Parse(namXB);
             e.NgayNhap = DateTime.Parse(ngayNhap);
-            e.isActive = 1;
             QLThuVienDC.SACHes.InsertOnSubmit(e);
             QLThuVienDC.SubmitChanges();
         }

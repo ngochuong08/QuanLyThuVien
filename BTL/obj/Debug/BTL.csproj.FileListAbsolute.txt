@@ -1,0 +1,15 @@
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\bin\Debug\BTL.exe.config
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.Cache
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\bin\Debug\BTL.exe
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\bin\Debug\BTL.pdb
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.exe
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.pdb
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.Home.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.DSNhanVien.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.DSDocGia.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.DSSach.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.ChiTietPhieuMuon.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.Login.resources
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.csprojResolveAssemblyReference.cache
+C:\Users\Huong\Documents\OU\LTCSDL\BTL\BTL\obj\Debug\BTL.DSPhieuMuon.resources
