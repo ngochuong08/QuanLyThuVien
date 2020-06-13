@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31CB83A5-5FA2-44F2-854A-43D25C4B1D28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BTL</RootNamespace>
+    <AssemblyName>BTL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\ConnectionClass.cs" />
+    <Compile Include="Class\Users.cs" />
+    <Compile Include="DBQuanLyThuVien.cs">
+      <DependentUpon>DBQuanLyThuVien.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBQuanLyThuVien.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBQuanLyThuVien.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBQuanLyThuVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBQuanLyThuVienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class\DocGia.cs" />
+    <Compile Include="DSDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSDocGia.Designer.cs">
+      <DependentUpon>DSDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSSach.Designer.cs">
+      <DependentUpon>DSSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSNhanVien.Designer.cs">
+      <DependentUpon>DSNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\NhanVien.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DSPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSPhieuMuon.Designer.cs">
+      <DependentUpon>DSPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PhieuMuon.cs" />
+    <Compile Include="Class\Sach.cs" />
+    <Compile Include="ChiTietPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhieuMuon.Designer.cs">
+      <DependentUpon>ChiTietPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSPhieuMuon.resx">
+      <DependentUpon>DSPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietPhieuMuon.resx">
+      <DependentUpon>ChiTietPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DBQuanLyThuVien.dbml.layout">
+      <DependentUpon>DBQuanLyThuVien.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="DSDocGia.resx">
+      <DependentUpon>DSDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSSach.resx">
+      <DependentUpon>DSSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSNhanVien.resx">
+      <DependentUpon>DSNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DBQuanLyThuVien.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>DBQuanLyThuVien.designer.cs</LastGenOutput>
+    </None>
+    <None Include="DBQuanLyThuVienDataSet.xsc">
+      <DependentUpon>DBQuanLyThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBQuanLyThuVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBQuanLyThuVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBQuanLyThuVienDataSet.xss">
+      <DependentUpon>DBQuanLyThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfer-down-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
